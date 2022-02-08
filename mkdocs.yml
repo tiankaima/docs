@@ -1,0 +1,23 @@
+site_name: TianKaiM's Blog
+
+site_description: Personal Blog.
+site_author: TianKaiM
+site_url: https://github.com/tiankaima
+
+# Copyright
+copyright: TianKaiM, MIT License
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - instant
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
