@@ -1,5 +1,10 @@
 # Defold Basic
 
+> Notes:
+> When I was wrote this, I was quite enthusiastic about developing my own game, so I came across defold engine, which, I took some time to find out, is complete garbage.(Sorry for using such strong words...)
+
+> So I basically started this page writing about some basic grammar in Lua, hoping to help me with the development process, so you might want to see the official docs about the defold engine [here](https://defold.com/manuals/).
+
 ## 1. Introduction
 
 Defold is a game engine that allows you to create games for mobile devices (and desktop environments).
