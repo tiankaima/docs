@@ -1,0 +1,1027 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Personal Blog.">
+      
+      
+        <meta name="author" content="TianKaiM">
+      
+      
+        <link rel="canonical" href="https://tiankaima.github.io/docs/Python/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+    
+    
+      
+        <title>Getting Started in Python && basic grammar - TianKaiM's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started-in-python-basic-grammar" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TianKaiM&#39;s Blog" class="md-header__button md-logo" aria-label="TianKaiM's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TianKaiM's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started in Python && basic grammar
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TianKaiM&#39;s Blog" class="md-nav__button md-logo" aria-label="TianKaiM's Blog" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    TianKaiM's Blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          BugFixs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="BugFixs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          BugFixs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BugFixs/2022-2-7/" class="md-nav__link">
+        2022-2-7
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Defold
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Defold" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Defold
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Defold/basic/" class="md-nav__link">
+        Defold Basic
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Python" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Getting Started in Python && basic grammar
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting Started in Python && basic grammar
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-platform" class="md-nav__link">
+    Windows Platform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos-platform" class="md-nav__link">
+    macOS Platform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-platform" class="md-nav__link">
+    Linux Platform
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-environments" class="md-nav__link">
+    IDE environments
+  </a>
+  
+    <nav class="md-nav" aria-label="IDE environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pycharm" class="md-nav__link">
+    Pycharm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-grammar" class="md-nav__link">
+    Basic Grammar
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Grammar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-types" class="md-nav__link">
+    Variable types:
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable types:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#number-type" class="md-nav__link">
+    number type
+  </a>
+  
+    <nav class="md-nav" aria-label="number type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subnote-i-type-and-isinstance" class="md-nav__link">
+    SubNote I - type() and isinstance()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-operations" class="md-nav__link">
+    Basic operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnote-ii-type-conversion-and-assigning" class="md-nav__link">
+    SubNote II - type "conversion" and assigning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-type" class="md-nav__link">
+    Complex type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows-platform" class="md-nav__link">
+    Windows Platform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos-platform" class="md-nav__link">
+    macOS Platform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-platform" class="md-nav__link">
+    Linux Platform
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ide-environments" class="md-nav__link">
+    IDE environments
+  </a>
+  
+    <nav class="md-nav" aria-label="IDE environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visual-studio-code" class="md-nav__link">
+    Visual Studio Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pycharm" class="md-nav__link">
+    Pycharm
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-grammar" class="md-nav__link">
+    Basic Grammar
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Grammar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-types" class="md-nav__link">
+    Variable types:
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable types:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#number-type" class="md-nav__link">
+    number type
+  </a>
+  
+    <nav class="md-nav" aria-label="number type">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#subnote-i-type-and-isinstance" class="md-nav__link">
+    SubNote I - type() and isinstance()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-operations" class="md-nav__link">
+    Basic operations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnote-ii-type-conversion-and-assigning" class="md-nav__link">
+    SubNote II - type "conversion" and assigning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-type" class="md-nav__link">
+    Complex type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+
+                
+
+
+<h1 id="getting-started-in-python-basic-grammar">Getting Started in Python &amp;&amp; basic grammar<a class="headerlink" href="#getting-started-in-python-basic-grammar" title="Permanent link">&para;</a></h1>
+<p>This is where some of my notes while learning Python, but mostly written afterwards considering I didn't really know how to code before learning Python...</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This site is written in kinda hurry, so some part of code might be directly copied from some site without mentioning, which I hope is not considered offensive in the spirit of sharing pure knowledge.</p>
+<p>But in case you feel uncomfortable about this, email me directly.</p>
+</div>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This article is about setting up Python development.</p>
+<p>Some of the document below is copied from <code>https://www.runoob.com/python3/python3-install.html</code>, greatly appreciated.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I would recommend to use <code>git</code> along with <code>github</code> to manage your Python code.</p>
+<p>Guide Here: <code>https://www.runoob.com/git/git-install-setup.html</code></p>
+</div>
+<h3 id="windows-platform">Windows Platform<a class="headerlink" href="#windows-platform" title="Permanent link">&para;</a></h3>
+<p>Installing Python on Windows is recommended to be done through the Visual Studio.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method is recommended because Visual Studio comes with better support when updating Python, also it helps setup environment variables automatically.</p>
+</div>
+<p>Other recommended ways to install Python on Windows are:</p>
+<ol>
+<li>Through official release on <code>https://www.python.org/downloads/</code></li>
+<li>
+<p>Through <code>winget</code> command:
+    <code>winget install python</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>winget</code> is a command line tool that comes with Windows 10/11, see <code>https://docs.microsoft.com/zh-cn/windows/package-manager/winget/</code></p>
+</div>
+</li>
+<li>
+<p>Through Windows Store.</p>
+<p>(<strong>Least recommended</strong> due to update and environment variable reasons)</p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Setting up environment variables:</p>
+<p>See article <code>https://www.runoob.com/python3/python3-install.html</code></p>
+<p>You might want to set this <strong>NOW</strong>, otherwise you might run into errors.</p>
+</div>
+<h3 id="macos-platform">macOS Platform<a class="headerlink" href="#macos-platform" title="Permanent link">&para;</a></h3>
+<p>Recommended way to install Python on macOS is through <code>homebrew</code>:</p>
+<div class="codehilite"><pre><span></span><code>brew install python
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>brew</code> is a package manager for macOS, see <code>https://brew.sh/</code></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Installing <code>git</code> is the same, simply run <code>brew install git</code>.</p>
+</div>
+<h3 id="linux-platform">Linux Platform<a class="headerlink" href="#linux-platform" title="Permanent link">&para;</a></h3>
+<p>See your Linux distribution's documentation for how to install Python.</p>
+<p>Take Ubuntu as an example:</p>
+<div class="codehilite"><pre><span></span><code>sudo apt install python3
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>git</code> should already be installed on your system, if not, run <code>sudo apt install git</code> to install it.</p>
+</div>
+<h2 id="ide-environments">IDE environments<a class="headerlink" href="#ide-environments" title="Permanent link">&para;</a></h2>
+<h3 id="visual-studio-code">Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Visual Studio Code</code> is a powerful IDE for Python development.
+It comes with a lot of features, including syntax highlighting, code completion, and more.
+It is recommended to use it for <strong>ALL</strong> Python development.</p>
+</div>
+<p>You can download it from <code>https://code.visualstudio.com/download</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Visual Studio Code</code> is available as a command line tool, you can run it by typing <code>code</code> in your terminal.</p>
+<p>You can also install it through <code>npm</code>: <code>npm install -g code</code></p>
+</div>
+<h3 id="pycharm">Pycharm<a class="headerlink" href="#pycharm" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>Pycharm</code> is great for starters, but it is not recommended for large-scale Python development, mainly because lack of extensions support.</p>
+<p>That is to say, if you want a simple guide-free Python environment setup, you can use <code>Pycharm</code> to get started.</p>
+<p>You can download it from <code>https://www.jetbrains.com/pycharm/download/</code></p>
+</div>
+<h2 id="basic-grammar">Basic Grammar<a class="headerlink" href="#basic-grammar" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This article is about basic Python grammar.</p>
+<p>For more details, see <code>https://docs.python.org/3/reference/grammar.html</code></p>
+</div>
+<h3 id="variable-types">Variable types:<a class="headerlink" href="#variable-types" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>One should always start with learning the variable types.</p>
+</blockquote>
+<p>In Python, there are six main types of variables:</p>
+<ul>
+<li><code>number</code>: number</li>
+<li><code>str</code>: string</li>
+<li><code>list</code>: list</li>
+<li><code>tuple</code>: tuple</li>
+<li><code>set</code>: set</li>
+<li><code>dict</code>: dictionary</li>
+</ul>
+<p>Let's start one by one:</p>
+<h4 id="number-type"><code>number</code> type<a class="headerlink" href="#number-type" title="Permanent link">&para;</a></h4>
+<p>In Python, <code>number</code> type is used to represent all kinds of numbers,including <code>integers</code>, <code>floats</code>, and <code>complex numbers</code>, as well as <code>bool</code>.</p>
+<hr />
+<h5 id="subnote-i-type-and-isinstance">SubNote I - <code>type()</code> and <code>isinstance()</code><a class="headerlink" href="#subnote-i-type-and-isinstance" title="Permanent link">&para;</a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to find out the type of variable, type <code>type(variable)</code> to find out:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="mf">3.0</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="k">class</span> <span class="err">&#39;</span><span class="nc">float</span><span class="s1">&#39;&gt;</span>
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Another method to determine what kind of variable is is to use <code>isinstance()</code>:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span><span class="nb">float</span><span class="p">)</span>
+<span class="kc">True</span>
+</code></pre></div>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>There's a difference between <code>isinstance()</code> and <code>type()</code>:</p>
+<p>However, you won't encounter the problem until you learn <code>class</code>.</p>
+<p>For further answers, see <a href="about:blank">here</a>, right now you can consider the following as true:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="nb">isinstance</span><span class="p">(</span><span class="n">_variable</span><span class="p">,</span><span class="n">_type</span><span class="p">)</span>
+<span class="c1"># equals to</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">_variable</span><span class="p">)</span> <span class="o">==</span> <span class="n">_type</span>
+</code></pre></div>
+
+<div class="admonition todo">
+<p class="admonition-title">Todo</p>
+<p>Need to replace the link!</p>
+</div>
+<hr />
+<h5 id="basic-operations">Basic operations<a class="headerlink" href="#basic-operations" title="Permanent link">&para;</a></h5>
+<p><code>number</code> type has the following arithmetic operations:</p>
+<ul>
+<li><code>add</code>: <code>+</code></li>
+<li><code>subtract</code>: <code>-</code></li>
+<li><code>multiply</code>: <code>*</code></li>
+</ul>
+<blockquote>
+<p>The three functions above will only return <code>int</code> when two <code>int</code> are given, otherwise it will return <code>float</code>, or <code>complex</code>.</p>
+</blockquote>
+<ul>
+<li><code>divide</code>: <code>/</code> (This will return a <code>float</code>, even the result is an integer):</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span><span class="o">/</span><span class="mi">2</span>
+<span class="mf">2.0</span>
+</code></pre></div>
+
+<ul>
+<li><code>floor division</code>: <code>//</code> (This will return an integer):</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">//</span><span class="mi">3</span>
+<span class="mi">1</span>
+</code></pre></div>
+
+<ul>
+<li><code>modulo</code>: <code>%</code> (This will return an integer):</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span><span class="o">%</span><span class="mi">3</span>
+<span class="mi">2</span>
+</code></pre></div>
+
+<ul>
+<li><code>power</code>: <code>**</code></li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
+<span class="mi">8</span>
+</code></pre></div>
+
+<hr />
+<h5 id="subnote-ii-type-conversion-and-assigning">SubNote II - <code>type</code> "conversion" and assigning<a class="headerlink" href="#subnote-ii-type-conversion-and-assigning" title="Permanent link">&para;</a></h5>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Python supports assigning two variables at the same time:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span>
+</code></pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Like a scripting language, Python support changing variable types, just assign whatever you want to the variable:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="n">a</span><span class="o">=</span><span class="mi">1</span> <span class="c1"># a is now an integer</span>
+<span class="n">a</span><span class="o">=</span><span class="s1">&#39;hello&#39;</span> <span class="c1"># a is now a string</span>
+</code></pre></div>
+
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Although the example given is legal, <strong>DO NOT USE PYTHON LIKE THAT.</strong></p>
+</div>
+<hr />
+<h5 id="complex-type">Complex type<a class="headerlink" href="#complex-type" title="Permanent link">&para;</a></h5>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>Complex</code> type is usually ignored in most getting-started document.</p>
+<p>However, it's something quite interesting and new(?) in computer science.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Python, the notation for imaginary number is <code>j</code>, NOT <code>i</code>(in some countries are taught as <code>i</code>).</p>
+</div>
+<p>An example:</p>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="n">j</span>
+<span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="n">j</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Arithmetic operations on <code>complex</code> type are the "same" as other <code>number</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>floor division</code> and <code>modulo</code> are not supported in <code>complex</code> type, no matter the position.</p>
+<p>This will result in a <code>TypeError</code>:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span><span class="o">//</span><span class="mi">2</span><span class="n">j</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="n">unsupported</span> <span class="n">operand</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="o">//</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span> <span class="ow">and</span> <span class="s1">&#39;complex&#39;</span>
+</code></pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>ALL</strong> arithmetic operations on <code>complex</code> type will return <code>complex</code> type:</p>
+</div>
+<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">+</span><span class="mi">4</span><span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="mi">4</span><span class="n">j</span><span class="p">)</span> 
+<span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">0</span><span class="n">j</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mf">1.0</span><span class="o">+</span><span class="mi">4</span><span class="n">j</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mf">1.0</span><span class="o">-</span><span class="mi">4</span><span class="n">j</span><span class="p">)</span> 
+<span class="p">(</span><span class="o">-</span><span class="mf">0.8823529411764706</span><span class="o">+</span><span class="mf">0.47058823529411764</span><span class="n">j</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span><span class="n">j</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="n">j</span><span class="p">)</span>
+<span class="p">(</span><span class="mf">6.694563360967683</span><span class="o">+</span><span class="mf">0.585212825721</span><span class="n">j</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Complex numbers have some unique properties:</p>
+
+              
+
+<!-- Giscus -->
+<h2 id="__comments">Comments</h2>
+<!-- Replace with generated snippet -->
+<script src="https://giscus.app/client.js"
+        data-repo="tiankaima/docs"
+        data-repo-id="R_kgDOGzqQxw"
+        data-category="General"
+        data-category-id="DIC_kwDOGzqQx84COBKb"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<!-- Reload on palette change -->
+<script>
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object")
+        if (palette.color.scheme === "slate") {
+            var giscus = document.querySelector("script[src*=giscus]")
+            giscus.setAttribute("data-theme", "dark")
+        }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+                /* Instruct Giscus to change theme */
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
+
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../Defold/basic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Defold Basic" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Defold Basic
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      TianKaiM, MIT License
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["instant"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
+      
+    
+  </body>
+</html>
