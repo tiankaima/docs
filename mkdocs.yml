@@ -2,7 +2,7 @@ site_name: TianKaiM's Blog
 
 site_description: Personal Blog.
 site_author: TianKaiM
-site_url: https://github.com/tiankaima
+site_url: https://tiankaima.github.io/docs
 
 # Copyright
 copyright: TianKaiM, MIT License
@@ -10,7 +10,7 @@ copyright: TianKaiM, MIT License
 theme:
   name: material
   custom_dir: overrides
-  language: zh
+  language: en
   palette:
     primary: indigo
     accent: indigo
