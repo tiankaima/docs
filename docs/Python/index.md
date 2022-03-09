@@ -3,25 +3,24 @@
 This is where some of my notes while learning Python, but mostly written afterwards considering I didn't really know how to code before learning Python...
 
 !!! note
-    This site is written in kinda hurry, so some part the code might be directly copied from some site without mentioning, which I hope is not considered offensive in the spirit of sharing knowledge.
+    This site is written in kinda hurry, so some part of code might be directly copied from some site without mentioning, which I hope is not considered offensive in the spirit of sharing pure knowledge.
 
     But in case you feel uncomfortable about this, email me directly.
 
 
-# Getting Started
+## Getting Started
 
 !!! note
     This article is about setting up Python development.
 
-!!! warning
     Some of the document below is copied from `https://www.runoob.com/python3/python3-install.html`, greatly appreciated.
 
-!!! warning
+!!! tip
     I would recommend to use `git` along with `github` to manage your Python code.
 
     Guide Here: `https://www.runoob.com/git/git-install-setup.html`
 
-## Windows Platform
+### Windows Platform
 
 Installing Python on Windows is recommended to be done through the Visual Studio.
 
@@ -51,7 +50,7 @@ Other recommended ways to install Python on Windows are:
     You might want to set this **NOW**, otherwise you might run into errors.
 
 
-## macOS Platform
+### macOS Platform
 
 Recommended way to install Python on macOS is through `homebrew`:
 
@@ -64,7 +63,7 @@ brew install python
 !!! note
     Installing `git` is the same, simply run `brew install git`.
 
-## Linux Platform
+### Linux Platform
 
 See your Linux distribution's documentation for how to install Python.
 
@@ -103,7 +102,7 @@ You can download it from `https://code.visualstudio.com/download`
 
     You can download it from `https://www.jetbrains.com/pycharm/download/`
 
-# Basic Grammar
+## Basic Grammar
 
 !!! note
     This article is about basic Python grammar.
@@ -111,7 +110,7 @@ You can download it from `https://code.visualstudio.com/download`
     For more details, see `https://docs.python.org/3/reference/grammar.html`
 
 
-## Variable types:
+### Variable types:
 
 > One should always start with learning the variable types.
 
@@ -126,12 +125,12 @@ In Python, there are six main types of variables:
 
 Let's start one by one:
 
-### `number` type
+#### `number` type
 
 In Python, `number` type is used to represent all kinds of numbers,including `integers`, `floats`, and `complex numbers`, as well as `bool`.
 
 ---
-#### SubNote I - `type()` and `isinstance()`
+##### SubNote I - `type()` and `isinstance()`
 
 !!! note
     In order to find out the type of variable, type `type(variable)` to find out:
@@ -165,7 +164,7 @@ type(_variable) == _type
     Need to replace the link!
 
 ---
-#### Basic operations
+##### Basic operations
 
 `number` type has the following arithmetic operations:
 
@@ -204,7 +203,7 @@ type(_variable) == _type
 ```
 
 ---
-#### SubNote II - `type` "conversion" and assigning
+##### SubNote II - `type` "conversion" and assigning
 
 !!! Tip
     Python supports assigning two variables at the same time:
@@ -225,7 +224,7 @@ a='hello' # a is now a string
     Although the example given is legal, **DO NOT USE PYTHON LIKE THAT.**
 
 ---
-#### Complex type
+##### Complex type
 
 !!! Tip
     `Complex` type is usually ignored in most getting-started document.
