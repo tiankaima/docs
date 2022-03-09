@@ -121,7 +121,7 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
+# /site
 
 # mypy
 .mypy_cache/
@@ -139,3 +139,5 @@ cython_debug/
 
 # VSCode
 .vscode/
+
+site/
