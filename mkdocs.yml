@@ -9,6 +9,7 @@ copyright: TianKaiM, MIT License
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
   palette:
     primary: indigo
